@@ -4,6 +4,11 @@
 
 Some utilities to work with React 16.3 contexts
 
+## Installation
+
+```bash
+npm install --save react-contexting
+```
 
 ## Documentation
 
