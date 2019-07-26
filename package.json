@@ -1,0 +1,40 @@
+{
+  "name": "react-contexting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/contexting.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"no test specified\""
+  },
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.3.0",
+    "prop-types": ">=15.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "prop-types": "^15.7.2",
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.3.6"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ]
+  }
+}
