@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "",
   "main": "dist/contexting.js",
+  "module": "dist/contexting.js",
   "scripts": {
     "build": "webpack",
     "test": "echo \"no test specified\""
