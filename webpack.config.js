@@ -5,10 +5,10 @@ module.exports = {
   mode: 'production',
   entry: './src/contexting.js',
   output: {
-    filename: 'dist/contexting.js',
+    filename: 'contexting.js',
     path: path.resolve(__dirname, 'dist'),
-    library: '',
-    libraryTarget: 'commonjs'
+    library: 'react-contexting',
+    libraryTarget: 'umd'
   },
   optimization: {
     minimize: false
