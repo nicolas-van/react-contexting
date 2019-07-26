@@ -1,9 +1,8 @@
 {
   "name": "react-contexting",
   "version": "0.0.1",
-  "description": "",
-  "main": "dist/contexting.js",
-  "module": "dist/contexting.js",
+  "description": "Some utilities to work with React 16.3 contexts",
+  "main": "./dist/contexting.js",
   "scripts": {
     "build": "webpack",
     "test": "echo \"no test specified\""
@@ -26,8 +25,10 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
     "prop-types": "^15.7.2",
+    "react": "^16.8.6",
     "webpack": "^4.38.0",
-    "webpack-cli": "^3.3.6"
+    "webpack-cli": "^3.3.6",
+    "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
     "lodash": "^4.17.15"

@@ -1,34 +1,20 @@
 const path = require('path');
+var nodeExternals = require('webpack-node-externals');
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: './src/contexting.js',
   output: {
     filename: 'dist/contexting.js',
     path: path.resolve(__dirname, 'dist'),
-    library: 'react-contexting',
-    libraryTarget: 'umd',
+    library: '',
+    libraryTarget: 'commonjs'
   },
-  externals: {
-    react: {
-      commonjs: 'react',
-      commonjs2: 'react',
-      amd: 'react',
-      root: 'react',
-    },
-    'prop-types': {
-      commonjs: 'prop-types',
-      commonjs2: 'prop-types',
-      amd: 'prop-types',
-      root: 'prop-types',
-    },
-    'lodash': {
-      commonjs: 'lodash',
-      commonjs2: 'lodash',
-      amd: 'lodash',
-      root: '_',
-    },
+  optimization: {
+    minimize: false
   },
+  devtool: 'source-map',
+  externals: [nodeExternals()],
   module: {
     rules: [
         {
@@ -36,9 +22,6 @@ module.exports = {
           exclude: /node_modules/,
           use: {
               loader: 'babel-loader',
-              options: {
-              presets: ['@babel/preset-env']
-              }
           }
         }
     ],
