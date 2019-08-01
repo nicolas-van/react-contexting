@@ -1,6 +1,6 @@
 {
   "name": "react-contexting",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Some utilities to work with React 16.3 contexts",
   "main": "./dist/contexting.js",
   "scripts": {
