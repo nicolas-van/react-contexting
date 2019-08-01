@@ -9,6 +9,14 @@
   },
   "author": "",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolas-van/react-contexting.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nicolas-van/react-contexting/issues"
+  },
+  "homepage": "https://github.com/nicolas-van/react-contexting#readme",
   "keywords": [
     "react",
     "context",
