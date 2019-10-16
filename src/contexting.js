@@ -12,11 +12,13 @@ import _ from 'lodash';
 function connectContext(component, propName, context) {
   const Component = component;
   // eslint-disable-next-line react/display-name
-  return (props) => (
+  const tmp = (props) => (
     <context.Consumer>
       {(state) => <Component {...props} {... {[propName]: state}} />}
     </context.Consumer>
   );
+  tmp.displayName = Component.displayName || Component.name;
+  return tmp;
 }
 
 /**
